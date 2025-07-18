@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chathula Waduge | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/xicon.png">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+    <style>
+        .matrix-text {
+        color: #00AEEF;
+        font-size: 80px;
+        font-family: monospace;
+        position: relative;
+        text-shadow: 2px 1px 0px #000000eb, 0 0 20px #00aeef5c, 0 0 30px #00aeef40;
+        z-index: 2; /* Ensure it stays above the rain effect */
+        }
+
+        .matrix-text::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: glitch 2s infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        transform: translate(-2px, -2px);
+        color: #00AEEF;
+        text-shadow: 0 0 5px #00AEEF, 0 0 15px #00AEEF;
+        }
+
+        /* Glitch effect for the text */
+        @keyframes glitch {
+        0%, 100% {
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+            transform: translate(0);
+        }
+        33% {
+            clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
+            transform: translate(-5px, -5px);
+        }
+        66% {
+            clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+            transform: translate(5px, 5px);
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR START -->
+    <nav class="navbar">
+        <div class="navbar-container">
+
+            <!-- column 1 - logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/Asset 6@4x.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- column 2 - nav link -->
+            <div class="nav-links">
+                <!-- about me -->
+                <div class="nav-item">
+                    <a href="about.html">ABOUT</a>
+                </div>
+                <!-- my projects -->
+                <div class="nav-item">
+                    <a href="projects.html">PROJECTS</a>
+                </div>
+                <!-- reviews -->
+                <div class="nav-item">
+                    <a href="resume.html">RESUME</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="clients.html">CLIENTS</a>
+                </div>
+
+            </div>
+
+            <!-- column 3 - contact -->
+            <div class="nav-contact">
+                <div class="nav-item">
+                    <a href="contact-us.html">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hamburger-eke-div-eka">
+                <!-- Hamburger Button -->
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Panel -->
+            <div class="mobile-nav" id="mobileNav">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.html">RESUME</a>
+                <a href="clients.html">CLIENTS</a>
+                <a href="contact-us.html">Contact Me</a>
+            </div>
+
+        </div>
+
+    </nav>
+<!-- NAVIGATION BAR END -->
+
+    <!-- BODY CONTAINER START -->
+    <section class="body-container">
+
+        <!-- HIRE ME SECTION START -->
+        <section class="hireme-section" id="hireme">
+
+            <!-- hire me section col 1 -->
+            <div class="hireme-col-1">
+                <div>
+                    <h1 class="matrix-text" data-text="Your UI/UX Partner">Your UI/UX Partner</h1>
+                </div>
+                <!-- <h1>Your UI/UX Partner</h1> -->
+                <h4>Warning: My designs may cause <br>
+                    increased user engagement and brand loyalty. <br>
+                    Proceed with caution <span>(but please do! ;))</span>.
+                </h4>
+                <a target="_blank" href="contact-us.php" class="hireme-button btn-border-reveal">Hire me</a>
+            </div>
+
+            <!-- hire me section col 2 -->
+            <div class="hireme-col-2">
+                <img src="images/cheems.jpg">
+            </div>
+
+        </section>
+        <!-- HIRE ME SECTION END -->
+
+        <!-- WHO I AM SECTION (ABOUT ME) START -->
+        <section class="aboutme-section" id="aboutme">
+            <h2>Who I am ?</h2>
+
+            <!-- about me container -->
+            <div class="aboutme-container">
+
+                <!-- about me col 1 -->
+                <div class="aboutme-col-2">
+                    <img src="images/hireme.jpg">
+                </div>
+
+                <!-- about me col 2 -->
+                <div class="aboutme-col-1">
+                    <h4>
+                        <span>
+                            Hello there! I'm Chathula Waduge. <br><br>
+                        </span>
+                        A passionate UI/UX designer hailing from the beautiful island
+                        of Sri Lanka. Currently on an exhilarating journey pursuing
+                        a Creative Multimedia degree at Limcockwing University,
+                        My work is not just about crafting visually appealing
+                        interfaces; it's about creating immersive and
+                        user-centric experiences that leave a lasting impression.
+                    </h4>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1rtkoKgL6JufbI7y45on8bfgFf_ZleBf8/view?usp=sharing"
+                        class="aboutme-btn-border-reveal">Download CV</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- WHO AM I SECTION END -->
+
+        <!-- VIDEO SECTION START -->
+
+        <section>
+            <div>
+                <video class="index-video" controls>
+                    <source src="images/indexvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION END -->
+
+        <!-- MY PROJECTS SECTION START -->
+        <section class="projects-section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-box">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/158CBVQGbL-sssqV7SZM8Jao7id4k9NxF/view?usp=sharing">
+                        <img src="images/project1.png" alt="project 1">
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1Gcunhu6xc26ABf33fXeE_eVrI-gjlOwc/view?usp=sharing">
+                        <img src="images/project2.png" alt="project 2">
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1Ob2An3VFpJy0CZH0tPAr6x1VpJnRKd1k/view?usp=sharing">
+                        <img src="images/project3.png" alt="project 3">
+                    </a>
+                </div>
+                <div class="project-box">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1neYRlZFZZpMjFLMP-fGCwAOSsmEIHmxw/view?usp=sharing">
+                        <img src="images/project4.png" alt="project 4">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECT SECTION END -->
+
+
+
+
+
+        <!-- CLIENT REVIEW SECTION START -->
+        <!-- <section class="reviews-section" id="reviews">
+            <h2>Client Reviews</h2>
+            <div class="reviews-container">
+
+                
+                <div class="review-box">
+                    <div class="review-content-box">
+                        <p class="review-content">
+                            “Impressive! The designer transformed our ideas into a stunning website.
+                            The graphics are sleek and modern. Exceptional attention to detail and a pleasure to work
+                            with.“
+                        </p>
+                        <p class="review-client-name">
+                            - Navee Garusinghe
+                        </p>
+                    </div>
+                    <div class="client-imagebox">
+                        <img src="images/client1.jpg" alt="client profile image">
+                    </div>
+                </div>
+
+                
+                <div class="review-box">
+                    <div class="review-content-box">
+                        <p class="review-content">
+                            “Bad experience fr! UI/UX changes made our site wonky, not user-friendly at all.
+                            Graphics? Ew. <br>Didn't capture our vibe. Not the designer for cool projects, man.“
+                        </p>
+                        <p class="review-client-name">
+                            - KC Ranasinghe
+                        </p>
+                    </div>
+                    <div class="client-imagebox">
+                        <img src="images/client2.jpg" alt="client profile image">
+                    </div>
+                </div>
+
+                
+                <div class="review-box">
+                    <div class="review-content-box">
+                        <p class="review-content">
+                            “Exceptional UI/UX skills! Our app's navigation is now seamless.
+                            The graphic designs are visually appealing, conveying our brand perfectly. Highly
+                            recommended!“
+                        </p>
+                        <p class="review-client-name">
+                            - Stephen Wimalasena
+                        </p>
+                    </div>
+                    <div class="client-imagebox">
+                        <img src="images/client3.jpeg" alt="client profile image">
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <div class="review-content-box">
+                        <p class="review-content">
+                            “Incredible UI/UX design! Our website now stands out, attracting more visitors.
+                            The graphic work is spot-on, capturing our brand essence. Highly recommend this designer!“
+                        </p>
+                        <p class="review-client-name">
+                            - Shakya Fernando
+                        </p>
+                    </div>
+                    <div class="client-imagebox">
+                        <img src="images/client4.jpg" alt="client profile image">
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <div class="review-content-box">
+                        <p class="review-content">
+                            “Outstanding work! The designer brought our vision to life with a sleek UI/UX that exceeded
+                            expectations.
+                            The graphic design is top-notch and good vibes! Highly satisfied!“
+                        </p>
+                        <p class="review-client-name">
+                            - Sajitha Hettiarachchi
+                        </p>
+                    </div>
+                    <div class="client-imagebox">
+                        <img src="images/client5.jpeg" alt="client profile image">
+                    </div>
+                </div>
+                
+                <div class="review-box">
+                    <div class="review-content-box">
+                        <p class="review-content">
+                            “Flawless UI/UX design! Navigating our platform is now intuitive and enjoyable.
+                            The graphic designs are eye-catching and on-brand. <br>A true talent in the world of
+                            design!“
+                        </p>
+                        <p class="review-client-name">
+                            - Dilshan Ranasinghe
+                        </p>
+                    </div>
+                    <div class="client-imagebox">
+                        <img src="images/client7.jpg" alt="client profile image">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- REVIEW SECTION END -->
+
+    </section>
+
+    <!-- BODY CONTAINER END -->
+
+
+    <!-- FOOTER START -->
+    <footer>
+        <h4>Connect Me Here!</h4>
+        <div class="social-icon-container">
+            <a target="_blank" href="https://www.linkedin.com/in/chathula-waduge-5841b917a/">
+                <img src="images/linkedin.png">
+            </a>
+
+            <a target="_blank" href="https://web.facebook.com/chathula.waduge/">
+                <img src="images/facebook.png">
+            </a>
+
+            <a target="_blank" href="https://twitter.com/ChathulaWaduge/">
+                <img src="images/twitter.png">
+            </a>
+            <a target="_blank" href="https://wa.me/message/EYYUWDSZLJ7FK1/">
+                <img src="images/whatsapp.png">
+            </a>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- the script for the hamburger slider mobile nav -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector(".hamburger");
+          const mobileNav = document.getElementById("mobileNav");
+          const closeBtn = document.getElementById("closeBtn");
+          
+          hamburger.addEventListener("click", function () {
+            mobileNav.classList.add("active");
+          });
+          
+          closeBtn.addEventListener("click", function () {
+            mobileNav.classList.remove("active");
+          });
+        });
+    </script>
+
+</body>
+
+</html>

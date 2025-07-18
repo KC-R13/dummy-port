@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - [Your Name]</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR START -->
+    <nav class="navbar">
+        <div class="navbar-container">
+
+            <!-- column 1 - logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/Asset 6@4x.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- column 2 - nav link -->
+            <div class="nav-links">
+                <!-- about me -->
+                <div class="nav-item">
+                    <a href="about.html">ABOUT</a>
+                </div>
+                <!-- my projects -->
+                <div class="nav-item">
+                    <a href="projects.html">PROJECTS</a>
+                </div>
+                <!-- reviews -->
+                <div class="nav-item">
+                    <a href="resume.html">RESUME</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="clients.html">CLIENTS</a>
+                </div>
+
+            </div>
+
+            <!-- column 3 - contact -->
+            <div class="nav-contact">
+                <div class="nav-item">
+                    <a href="contact-us.html">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hamburger-eke-div-eka">
+                <!-- Hamburger Button -->
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Panel -->
+            <div class="mobile-nav" id="mobileNav">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.html">RESUME</a>
+                <a href="clients.html">CLIENTS</a>
+                <a href="contact-us.html">Contact Me</a>
+            </div>
+
+        </div>
+
+    </nav>
+<!-- NAVIGATION BAR END -->
+    
+<div class="aboutme-container">
+
+    <!-- about me col 1 -->
+    <div class="aboutme-col-2">
+        <img src="images/master.jpg">
+    </div>
+
+    <!-- about me col 2 -->
+    <div class="aboutme-col-1">
+        <h4>
+            <span>
+              <div class="hellocode">  Hello there! <br>I'm Chathula Waduge. <br><br></div> 
+            </span>
+            I'm Chathula, a UI/UX Designer driven by a passion for creating seamless and impactful digital experiences. 
+            I believe in understanding user needs to craft intuitive interfaces that not only look good but also solve 
+            real problems. My approach blends meticulous research with creative problem-solving, ensuring every design 
+            decision is purposeful and user-focused.
+        </h4>
+    </div>
+</div>
+            
+    <div class="expertise-section">
+        <h2>My Expertise</h2>
+        <div class="skills-container">
+      
+          <div class="skill-card-vertical">
+            <img src="images/figma.png" alt="Figma Logo" class="skill-logo" />
+            <span class="skill-name">Figma</span>
+            <span class="skill-percent">90%</span>
+          </div>
+      
+          <div class="skill-card-vertical">
+            <img src="images/xd.png" alt="Adobe XD Logo" class="skill-logo" />
+            <span class="skill-name">Adobe XD</span>
+            <span class="skill-percent">85%</span>
+          </div>
+      
+          <div class="skill-card-vertical">
+            <img src="images/SOFT4.png" alt="HTML CSS Logo" class="skill-logo" />
+            <span class="skill-name">HTML & CSS</span>
+            <span class="skill-percent">80%</span>
+          </div>
+      
+          <div class="skill-card-vertical">
+            <img src="images/soft33.png"Sketch Logo" class="skill-logo" />
+            <span class="skill-name">Sketch</span>
+            <span class="skill-percent">70%</span>
+          </div>
+      
+        </div>
+
+      </div>
+      
+       <!-- FOOTER START -->
+    <footer>
+        <h4>Connect Me Here!</h4>
+        <div class="social-icon-container">
+            <a target="_blank" href="https://www.linkedin.com/in/chathula-waduge-5841b917a/">
+                <img src="images/linkedin.png">
+            </a>
+
+            <a target="_blank" href="https://web.facebook.com/chathula.waduge/">
+                <img src="images/facebook.png">
+            </a>
+
+            <a target="_blank" href="https://twitter.com/ChathulaWaduge/">
+                <img src="images/twitter.png">
+            </a>
+            <a target="_blank" href="https://wa.me/message/EYYUWDSZLJ7FK1/">
+                <img src="images/whatsapp.png">
+            </a>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+       <!-- the script for the hamburger slider mobile nav -->
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector(".hamburger");
+          const mobileNav = document.getElementById("mobileNav");
+          const closeBtn = document.getElementById("closeBtn");
+          
+          hamburger.addEventListener("click", function () {
+            mobileNav.classList.add("active");
+          });
+          
+          closeBtn.addEventListener("click", function () {
+            mobileNav.classList.remove("active");
+          });
+        });
+    </script>
+
+</body>
+</html>
